@@ -18,6 +18,6 @@ public class Pyramid
             }
             System.out.println();
         }
-        
+        scan.close();
     }
 }

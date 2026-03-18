@@ -14,5 +14,6 @@ public class SumOfDigits
             number = number / 10;
         }
         System.out.println("Sum of digits is "+sum);
+        scan.close();
     }
 }

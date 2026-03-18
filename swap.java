@@ -16,5 +16,6 @@ public class swap
         num1 = num1 - num2;
 
         System.out.println("Numbers after swapping "+num1+" are "+num2);
+        scan.close();
     }
 }

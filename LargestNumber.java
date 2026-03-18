@@ -26,5 +26,6 @@ public class LargestNumber
         {
             System.out.println("The greatest number is "+num3);
         }
+        scan.close();
     }
 }
