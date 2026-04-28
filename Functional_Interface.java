@@ -3,19 +3,17 @@ interface A             //functional interface - interface which has only one ab
 {
     void display();
 }
-class B implements A
-{
-    @Override
-    public void display() 
-    {
-        System.out.println("display a message");
-    }  
-}
 public class Functional_Interface 
 {
     public static void main(String[] args) 
     {
-        B obj = new B();
+        A obj = new A() 
+        {
+            public void display()
+            {
+                System.out.println("display message using inner class");
+            }
+        };
         obj.display();
     }
 }
