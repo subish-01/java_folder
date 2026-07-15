@@ -20,7 +20,7 @@ public class Constructor
     public static void main(String[] args)
     {
         Student obj1 = new Student("Subish",20);
-        Student obj2 = new Student();
+        Student obj2 = new Student();                   //every time when we create object a copy of instance variable is stored in heap memory
         System.out.println("Name is "+obj1.name + " and the age is " +obj1.age);  
         System.out.println("name is "+obj2.name +" and the age is "+ obj2.age);
     }

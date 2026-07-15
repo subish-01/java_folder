@@ -6,18 +6,15 @@ public class Comparator_p
 {
     public static void main(String[] args) 
     {
-        Comparator<Integer> obj = new Comparator<Integer>()         //(Comparator)interface needs to be implemented
-        {
-        public int compare(Integer i, Integer j)
+        Comparator<Integer> obj = (Integer i, Integer j) -> {
+            if(i % 10 > j % 10)
             {
-                if(i % 10 > j % 10)
-                {
-                    return 1;       //return 1 means swap
-                }
-                else
-                    return -1;      //return -1 means no swap
+                return 1;       //return 1 means swap
             }
-        };
+            else
+                return -1;      //return -1 means no swap
+        } //(Comparator)interface needs to be implemented
+        ;
         List<Integer> nums = new ArrayList<>();
         nums.add(51);
         nums.add(33);
@@ -29,8 +26,6 @@ public class Comparator_p
         System.out.println(nums);
     }
 }
-@Override
 public int compare(Object o1, Object o2) {
-    // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'compare'");
 }

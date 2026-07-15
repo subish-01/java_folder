@@ -10,6 +10,7 @@ class A
 }
 class B extends A
 {
+    @Override
     public void show()
     {
         System.out.println("In B show");
@@ -17,6 +18,7 @@ class B extends A
 }
 class C extends A
 {
+    @Override
     public void show()
     {
         System.out.println("In C show");
