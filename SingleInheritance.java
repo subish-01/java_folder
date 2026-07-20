@@ -1,4 +1,4 @@
-class calculator
+class calculator                //parent class
 {
     public int add(int num1 , int num2)
     {
@@ -9,7 +9,7 @@ class calculator
         return num1 - num2;
     }
 }
-class advanceCalc extends calculator
+class advanceCalc extends calculator            //chile class
 {
     public int multiply(int num1,int num2)
     {
@@ -20,6 +20,20 @@ class advanceCalc extends calculator
         return num1 / num2;
     }
 }
+
+/* 
+                                -------------------
+                                |    Calculator    |                parent class
+                                --------------------
+                                        ^
+                                        |
+                                        |
+                                        |
+                                --------------------
+                                |   advance calc    |               child class
+                                ---------------------
+                                
+ */
 public class SingleInheritance 
 {
     public static void main(String[] args)
