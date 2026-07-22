@@ -1,6 +1,7 @@
 abstract class Car
 {
     //abstract methods can only be written in abstract class
+    //abstract class can have concrete methods too
     public abstract void drive();
     public abstract void playmusic();
 }
